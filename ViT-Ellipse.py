@@ -256,7 +256,7 @@ model.to(device)
 # optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
 # optimizer = torch.optim.RMSprop(model.parameters(), lr=0.01)
 optimizer = torch.optim.Adadelta(model.parameters(), lr=0.01)
-optimizer = torch.optim.Nadam(model.parameters(), lr=0.01)
+
 loss = torch.nn.MSELoss(reduction='mean')#torch.nn.CrossEntropyLoss()
 num_epoches = 1000
 min_mse = 1000.
